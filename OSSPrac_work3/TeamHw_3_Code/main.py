@@ -12,6 +12,8 @@ def result():
       result['Name'] = request.form.get('Name')
       result['Student Number'] = request.form.get('Student Number')
       result['Gender']=request.form.get('Gender')
+      result['Major'] = request.form.get('Major')
+      result['Programming Languages'] = ','.join(request.form.getlist('Programming Languages'))
       # 학번
       # 성별
       # 학과
