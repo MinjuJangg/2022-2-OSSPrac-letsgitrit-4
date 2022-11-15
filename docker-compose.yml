@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  web:
+    image: jw0293/ossprac:latest
+    build: .
+    ports:
+      - "80:80"
