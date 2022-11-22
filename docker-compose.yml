@@ -1,7 +1,10 @@
 version: "3.3"
 services:
   web:
-    image: jw0293/ossprac:latest
+    image: ${DOCKER_USER_ID}/ossprac
     build: .
+  
+  production:
+    image: ${DOCKER_USER_ID}/ossprac:${BUILD_NUMBER}
     ports:
-      - "80:80"
+    - "80:80"
